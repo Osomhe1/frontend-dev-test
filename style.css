@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700,500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+}
+
+.nav-link,
+.navbar-brand {
+    color: #000;
+    cursor: pointer;
+}
+.nav-link {
+    margin-right: 1em !important;
+}
+.nav-link:hover {
+    color: rgb(15, 52, 219);
+}
+.navbar-collapse {
+    justify-content: flex-end;
+}
+main{
+    padding: 30px;
+}
+
+.wrapper {
+  border-top: 1px solid #f0f0f0;
+  border-bottom: 1px solid #f0f0f0;
+  padding-bottom: 10px;
+}
+
+.debit-card {
+  width: 400px;
+  height: 250px;
+  padding: 20px;
+  background-color: #0093E9;
+  background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+  position: relative;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px #0000001a;
+  transition: all 0.3s ease-in;
+  cursor: pointer;
+}
+
+.debit-card:hover {
+  box-shadow: 5px 3px 5px #000000a2;
+}
+
+.card-2 {
+  background-color: #21d4fd;
+  background-image: linear-gradient(116deg, #d6584b 0%, #7461b2 100%);
+}
+.gen_m {
+  margin-left: 35px;
+}
+
+.text-muted {
+  font-size: 0.8rem;
+}
+
+.text-white {
+  font-size: 14px;
+}
+
+.btn:hover {
+  color: #fff;
+  background-color: #0093e9;
+}
+
+.rounded {
+  border-radius: 1rem;
+}
+
+input[type='radio'] {
+  margin-right: 5px;
+}
+
+.form-control1 {
+  font-size: 20px;
+  font-weight:lighter;
+  line-height: .5;
+
+}
+
+input[type="radio"] {
+  appearance: none;
+  background-color: rgb(9, 62, 209);
+  margin: 0;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  transform: translateY(-0.5em);
+   display: grid;
+  place-content: center;
+}
+
+input[type="radio"]::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  background-color: #fff;
+}
+
+input[type="radio"]:checked::before {
+  transform: scale(1);
+}
+
+input[type="radio"]:focus {
+  outline: max(2px, 0.15em) solid blue;
+  outline-offset: max(2px, 0.15em);
+}
